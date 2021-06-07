@@ -23,6 +23,12 @@ chrome.storage.local.get("data", function (item) {
     var date = new Date();
     if (date.getHours() === hour) {
       clearChrome();
+      chrome.notifications.create('', {
+        title: 'Tarea realizada',
+        message: 'Chrome Limpiado correctamente',
+        iconUrl: 'icon.png',
+        type: 'basic'
+      });
     }
   }
 

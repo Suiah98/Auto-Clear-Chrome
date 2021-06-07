@@ -1,12 +1,13 @@
 {
 	"name": "Auto Clear Chrome",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Limpia Chrome Automáticamente (historial , descargas y caché) cada día a la hora que quieras",
 	"homepage_url": "https://github.com/Suian98/Auto-Clear-Chrome",
 	"manifest_version": 2,
 	"permissions": [
 		"browsingData",
-		"storage"
+		"storage",
+		"notifications"
 	],
 	"icons": {
 		"128": "icon.png"
