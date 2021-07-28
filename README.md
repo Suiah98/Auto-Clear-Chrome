@@ -1,8 +1,8 @@
-# Auto Clear Chrome 1.0.1
+# Auto Clear Chrome 1.1.0
 Extensión que limpia Chrome automáticamente (historial , descargas y caché) cada día a la hora que quieras
 
 ## Instalación:
-Auto Clear Chrome por ahora no está disponible dentro de Chrome Web Store , así qué toca instalarlo por medio del modo desarrollador de Chrome:
+Auto Clear Chrome por ahora no está disponible dentro de Chrome Web Store debido a que aún está en desarrollo , así qué toca instalarlo por medio del modo desarrollador de Chrome:
 
 1.Primero descargamos el zip del proyecto y lo descomprimimos
 
