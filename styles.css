@@ -1,0 +1,87 @@
+/* Tema Light/Dark */
+/* Tema por si no se activa ni light ni dark */
+body {
+    --color: white;
+    --content: 'no compatible';
+    font-size: 18px;
+    margin: 0;
+    min-width: 500px;
+    background-color: var(--color);
+}
+
+* {
+    color: #595959;
+}
+
+h2,
+h3 {
+    color: black;
+}
+
+/* Tema Light */
+@media (prefers-color-scheme: light) {
+    body {
+        --color: #ffdeac;
+    }
+
+    * {
+        color: #595959;
+    }
+
+    h2,
+    h3 {
+        color: black;
+    }
+
+    footer {
+        background: #ff9b90;
+        -webkit-border-radius: 10px;
+        border: rgb(59, 59, 59) 2px outset;
+    }
+}
+
+/* Tema Dark */
+@media (prefers-color-scheme: dark) {
+    body {
+        --color: #202125;
+    }
+
+    * {
+        color: #ebebeb;
+    }
+
+    h2,
+    h3 {
+        color: white;
+    }
+
+    footer {
+        background: #292929;
+        -webkit-border-radius: 10px;
+        border: rgb(36, 36, 36) 2px outset;
+    }
+}
+
+/* Fin */
+
+img {
+    width: 480px;
+}
+
+.footermargin {
+    margin-top: 20px;
+}
+
+main {
+    margin-top: 15px;
+}
+
+p {
+    margin: 1% 3% 3% 3%;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 1% 3% 0% 3%;
+    font-size: 20px;
+}
