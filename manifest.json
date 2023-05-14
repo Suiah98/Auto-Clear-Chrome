@@ -1,11 +1,12 @@
 {
 	"name": "Auto Clear Chrome",
-	"version": "1.2.0",
-	"description": "Limpia Chrome Automáticamente (historial , descargas y caché) cada 3 horas",
+	"version": "1.3.0",
+	"description": "Una extensión sencilla que limpia Chrome automáticamente (historial , descargas y caché)",
 	"homepage_url": "https://github.com/Suian98/Auto-Clear-Chrome",
 	"manifest_version": 3,
 	"permissions": [
 		"browsingData",
+		"alarms",
 		"storage",
 		"notifications"
 	],

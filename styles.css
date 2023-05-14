@@ -46,6 +46,14 @@ h3 {
         --color: #202125;
     }
 
+    button {
+        background-color: #202125;
+    }
+
+    input {
+        background-color: #353536;
+    }
+
     * {
         color: #ebebeb;
     }

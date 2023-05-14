@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="icon.png" />
 
-    <title>Auto Clear Chrome</title>
+    <title>Ajustes - Auto Clear Chrome</title>
 </head>
 
 <body>
@@ -22,27 +22,15 @@
         <ul class="nav nav-tabs">
             <img src="icon.png" alt="logo" class="d-inline-block align-top" style="width:50px;">
             <li class="nav-item">
-                <a href="settings.html" class="nav-link">Ajustes</a>
+                <a href="index.html" class="nav-link">Inicio</a>
             </li>
         </ul>
     </header>
 
     <main>
-        <!-- Contenido Principal -->
-        <div class="container">
-            <div class="alert alert-warning" role="alert">
-                Uso Auto Clear Chrome para aprender sobre las extensiones de Chrome , pueden faltar funciones o haber
-                errores!
-            </div>
-            <h3>Bienvenido a Auto Clear Chrome</h3>
-            <p>Auto Clear Chrome es una extensión sencilla que limpia Chrome automáticamente (historial , descargas y caché)
-            </p>
-            <h4>Changelog Ver:<div id="version"></div>
-            </h4>
-            <ul class="list-group">
-                <li class="list-group-item">Ahora puedes elegir cada cuanto limpiar Chrome</li>
-                <li class="list-group-item">Nuevo icono</li>
-            </ul>
+        <label for="frequency">Frecuencia de limpieza (en horas):</label>
+        <input type="number" id="frequency" min="1">
+        <button id="save">Guardar</button>
     </main>
 
     <footer class="footer footermargin">
@@ -52,7 +40,7 @@
         <div class="footer-copyright text-center py-3">© 2023 Suiah98 – All rights reserved
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="options.js"></script>
 </body>
 
 </html>

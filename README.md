@@ -1,5 +1,5 @@
-# Auto Clear Chrome 1.2.0
-Auto Clear Chrome es una extensión que limpia Chrome automáticamente (historial , descargas y caché) cada 3 horas
+# Auto Clear Chrome 1.3.0
+Auto Clear Chrome es una extensión que limpia Chrome automáticamente (historial , descargas y caché)
 
 #### Uso Auto Clear Chrome para aprender sobre las extensiones de Chrome , pueden faltar funciones o haber errores!
 
@@ -18,8 +18,8 @@ Auto Clear Chrome por ahora no está disponible dentro de Chrome Web Store debid
 
 <img src="https://github.com/Suian98/Auto-Clear-Chrome/blob/main/assets/3.jpg?raw=true" width="480">
 
-4.Añadida!
+4.Añadida! , ahora puedes ajustar cada cuanto quieres que se limpie Chrome , que por defecto son 3 horas
 
 <img src="https://github.com/Suian98/Auto-Clear-Chrome/blob/main/assets/4.jpg?raw=true" width="480">
 
-### Listo! , ahora la extensión limpiará Chrome cada 3 horas , el historial también desaparecerá de tus dispositivos sincronizados , ten en cuenta que la extensión no limpia My Activity de tu cuenta de Google
+### Listo! , ahora la extensión limpiará Chrome , el historial también desaparecerá de tus dispositivos sincronizados , ten en cuenta que la extensión no limpia My Activity de tu cuenta de Google

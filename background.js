@@ -1,14 +1,3 @@
-/* Función para configurar por primera vez
-chrome.runtime.onInstalled.addListener(function (object) {
-  let externalUrl = "index.html";
-
-  if (object.reason === chrome.runtime.OnInstalledReason.INSTALL) {
-    chrome.tabs.create({ url: externalUrl }, function (tab) {
-    });
-  }
-});
-*/
-
 // Comprueba la última versión de Auto Clear Chrome
 fetch('https://raw.githubusercontent.com/Suiah98/Auto-Clear-Chrome/main/CheckVersion.txt')
   .then(response => response.text())
@@ -65,8 +54,29 @@ function compare(a, b) {
   return 0;
 }
 
-// Limpia Chrome cada 3 horas
-  setInterval(clearChrome, 10800000);
+// Función que se dispara cuando se instala la extensión
+chrome.runtime.onInstalled.addListener(function (object) {
+  // La URL de la página de opciones
+  let optionsUrl = "settings.html";
+
+  // La frecuencia de limpieza predeterminada (5 minutos)
+  let defaultFrequency = 5 * 60 * 1000; // 5 minutos en milisegundos
+
+  // Establecer la frecuencia de limpieza predeterminada
+  chrome.storage.sync.set({ 'clearFrequency': defaultFrequency }, function () {
+    console.log('Frecuencia de limpieza predeterminada establecida: ' + defaultFrequency);
+
+    // Crear una alarma con la frecuencia de limpieza
+    chrome.alarms.create('clearChrome', { periodInMinutes: defaultFrequency / (60 * 1000) });
+  });
+
+  // Comprueba si la razón de la instalación es porque la extensión fue instalada
+  if (object.reason === chrome.runtime.OnInstalledReason.INSTALL) {
+    // Si es así, crea una nueva pestaña con la página de opciones
+    chrome.tabs.create({ url: optionsUrl }, function (tab) {
+    });
+  }
+});
 
 // Función que limpia Chrome
 function clearChrome() {
@@ -91,3 +101,10 @@ function clearChrome() {
     "webSQL": false
   });
 }
+
+// Escucha la alarma y ejecuta la función clearChrome
+chrome.alarms.onAlarm.addListener(function (alarm) {
+  if (alarm.name === 'clearChrome') {
+    clearChrome();
+  }
+});
