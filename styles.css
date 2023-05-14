@@ -18,6 +18,25 @@ h3 {
     color: black;
 }
 
+.rainbow-text {
+    font-size: 36px;
+    margin-top: 3px;
+    font-family: Arial, sans-serif;
+    animation: rainbow-animation 5s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
+  
+
 /* Tema Light */
 @media (prefers-color-scheme: light) {
     body {

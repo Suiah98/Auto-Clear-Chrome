@@ -59,8 +59,8 @@ chrome.runtime.onInstalled.addListener(function (object) {
   // La URL de la página de opciones
   let optionsUrl = "settings.html";
 
-  // La frecuencia de limpieza predeterminada (5 minutos)
-  let defaultFrequency = 5 * 60 * 1000; // 5 minutos en milisegundos
+  // La frecuencia de limpieza predeterminada (3 horas)
+  let defaultFrequency = 3 * 60 * 60 * 1000; // 3 horas en milisegundos
 
   // Establecer la frecuencia de limpieza predeterminada
   chrome.storage.sync.set({ 'clearFrequency': defaultFrequency }, function () {
