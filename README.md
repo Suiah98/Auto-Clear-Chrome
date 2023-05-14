@@ -1,6 +1,5 @@
 <h1>Auto Clear Chrome</h1>
 <p align="center"><img src=icon.png width="200"/></p>
-<h3 align="center">Ver 1.3.0</h3>
 Auto Clear Chrome es una extensión sencilla que limpia Chrome automáticamente (historial , descargas y caché)
 
 #### Uso Auto Clear Chrome para aprender sobre las extensiones de Chrome , pueden faltar funciones o haber errores!
